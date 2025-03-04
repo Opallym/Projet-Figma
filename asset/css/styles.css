@@ -25,6 +25,7 @@ h1 {
     font-family: "Jura";
     font-size: 40px;
     font-weight: bold;
+
 }
 
 .row1 {
@@ -39,7 +40,9 @@ h1 {
     background-color: rgb(0, 0, 0);
 }
 
-
+#Chef {
+    background-color: black;
+}
 
 
 .ImageCuisine {
@@ -64,7 +67,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 1000px;
-    background-color: rgb(225, 178, 120);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -98,7 +101,7 @@ h1 {
 .reservation-form input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #000000;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -117,12 +120,12 @@ h1 {
     align-items: center;
     height: 100vh;
 }*/
- a{
+a {
     text-decoration: none;
     color: black;
 
- }
- .ImageCuisine{
-    background-image:url('../Image/fond\ bois.png');
- }
- 
+}
+
+.ImageCuisine {
+    background-image: url('../Image/fond\ bois.png');
+}

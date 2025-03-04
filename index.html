@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="fluid-contairer">
+    <div class="fluid-contairer" id="HautDePage">
         <div class="row">
             <div class="col-3">
                 <img src="./asset/Image/logoresto.png" class="logo" alt="restaurant gastronomique" width="180"
@@ -39,7 +39,7 @@
             <img src="./asset/Image/fond resto.png" alt="Image du resto" width="1900" height="730" class="img-fluid">
             <nav class="position-absolute top-0 start-50 translate-middle-x">
                 <ul class=" list-group list-group-horizontal">
-                    <li class="list-group-item"><a href="www.youtube.com"><img src="./asset/Image/logoresto.png"
+                    <li class="list-group-item"><a href="#HautDePage"><img src="./asset/Image/logoresto.png"
                                 alt="Logo resto" width="70" height="60"></a>
                     <li class="list-group-item" id="stringBarreMenu"><a href="#Chef">Chef</a></li>
                     <li class="list-group-item" id="stringBarreMenu"><a href="#LaCuisine">Cuisine</a></li>
@@ -65,14 +65,23 @@
             </div>
         </div>
     </div>
-    
-    <div class="fluid-container row2" id="Chef">
-        <div class="row" style="background-color: #000;">
-            <div class="col-6"> <img src="./asset/Image/Chef.png" alt="Photo du Chef" width="620" height="935"> <!-- back img --></div>
-            <div class="col-6"><img src="./asset/Image/descriptifchef.png" alt="Photo de la description du Chef" width="600" height="900"></div>
+
+    <div id=Chef class="container-fluid mx-0 w-100">
+        <div class="row">
+            <!-- Colonne de gauche -->
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="d-flex justify-content-center align-items-center w-100  ">
+                    <img src="./asset/Image/Chef.png" class="img-fluid h-75" alt="Image à gauche">
+                </div>
+            </div>
+            <!-- Colonne de droite -->
+            <div class="col-md-6 d-flex align-items-stretch">
+                <div class="d-flex justify-content-center align-items-center w-100 ">
+                    <img src="./asset/Image/descriptifchef.png" class="img-fluid h-75" alt="Image à droite">
+                </div>
+            </div>
         </div>
     </div>
-
     <div class="row3">
         <section id="LaCuisine"></section>
         <h1>La cuisine:</h1>
@@ -92,43 +101,61 @@
         <section id="Menu"></section>
         <img src="./asset/Image/imagemenu2.png" alt="" width="850" height="1500">
     </div>
-    <div class="d-flex justify-content-center align-items-center vh-100 ">
-    <div class="reservation-form mt-5" id="Reservation" >
-        <h2>DEMANDE DE RÉSERVATION</h2>
-        <form>
-            <label for="date">Date :</label>
-            <input type="date" id="date" name="date" placeholder="Dates souhaitée" required>
+    <div class="d-flex justify-content-center align-items-center vh-100 " id="Reservation">
+        <div class="reservation-form mt-5">
+            <h2>DEMANDE DE RÉSERVATION</h2>
+            <form>
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" placeholder="Dates souhaitée" required>
 
-            <label for="name">Nom et prénom :</label>
-            <input type="text" id="name" name="name" placeholder="Nom et prénom" required>
+                <label for="name">Nom et prénom :</label>
+                <input type="text" id="name" name="name" placeholder="Nom et prénom" required>
 
-            <label for="adults">Nombre d'adultes :</label>
-            <input type="text" id="adults" name="adults" placeholder="Adulte(s)" required>
+                <label for="adults">Nombre d'adultes :</label>
+                <input type="text" id="adults" name="adults" placeholder="Adulte(s)" required>
 
-            <label for="children">Nombre d'enfants :</label>
-            <input type="text" id="children" name="children" placeholder="Enfant(s)" required>
+                <label for="children">Nombre d'enfants :</label>
+                <input type="text" id="children" name="children" placeholder="Enfant(s)" required>
 
-            <label for="meal">Repas :</label>
-            <input type="text" id="meal" name="meal" placeholder="Déjeuner" required>
+                <label for="meal">Repas :</label>
+                <input type="text" id="meal" name="meal" placeholder="Déjeuner" required>
 
-            <label for="arrival">Heure d'arrivée :</label>
-            <input type="text" id="arrival" name="arrival" placeholder="Heures d'arrivée" required>
+                <label for="arrival">Heure d'arrivée :</label>
+                <input type="text" id="arrival" name="arrival" placeholder="Heures d'arrivée" required>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Emails/courriel" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Emails/courriel" required>
 
-            <label for="phone">Téléphone :</label>
-            <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="Téléphone" required>
 
-            <label for="message">Votre message :</label>
-            <textarea id="message" name="message"
-                placeholder="Votre message, en précisant les intolérances alimentaires, allergies ou régimes particuliers."
-                required></textarea>
+                <label for="message">Votre message :</label>
+                <textarea id="message" name="message"
+                    placeholder="Votre message, en précisant les intolérances alimentaires, allergies ou régimes particuliers."
+                    required></textarea>
 
-            <input type="submit" value="Envoyer">
-        </form>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
     </div>
-</div>
+    <footer>
+        <div>
+            <h2>Maps:</h2>
+            <div class="d-flex justify-content-center align-items-center height vh-100">
+                <img src="asset/image/mapfond.jpg" alt="mapfond" class="img-fluid position-absolute rounded" width="800"
+                    height="900">
+                <img src="asset/image/map.jpg" alt="mapfond" class="map  img-fluid position-absolute rounded"
+                    width="627" height="238">
+            </div>
+            <div class="copifond-form text-center" id="Contact">
+                <p>Telephone : +33000000000</p>
+                <p>Adresse : 2 Rue leo, Lyon </p>
+                <p>Courriel : contact.@Passionnée.com</p>
+                <img src="asset/image/copyright.jpg" alt="copifond" class="img-fluid" alt="mapfond" class="img-fluid"
+                    width="1600" height="700">
+            </div>
+        </div>
+    </footer>
     </main>
 
     <!--
