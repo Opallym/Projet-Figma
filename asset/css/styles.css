@@ -71,6 +71,10 @@ h1 {
 
 }
 
+#cuisine {
+    background-image: url('../Image/fond\ bois.png');
+}
+
 .reservation-form h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -109,6 +113,10 @@ h1 {
     cursor: pointer;
 }
 
+#Menu {
+    background-image: url('../Image/menurestau1.jpg');
+}
+
 /*.reservation-form input[type="submit"]:hover {
     background-color: #218838;
     font-family: Arial, sans-serif;
@@ -128,4 +136,64 @@ a {
 
 .ImageCuisine {
     background-image: url('../Image/fond\ bois.png');
+}
+
+
+.mst1 {
+    display: block !important;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.menustiky {
+    display: none;
+}
+
+
+
+
+
+
+/* Style de base pour la navigation */
+nav {
+    transition: all 0.3s ease;
+    z-index: 1000;
+    /* Assurez-vous que le menu est au-dessus des autres éléments */
+}
+
+/* Style lorsque le menu est sticky */
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: white;
+    /* Ajoutez une couleur de fond */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Ombre pour un effet de profondeur */
+}
+
+/* Style pour la liste */
+.list-group-horizontal {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.list-group-item {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: black;
+    /* Couleur du texte */
+    font-weight: bold;
+}
+
+.show {
+    display: none;
 }
